@@ -30,9 +30,8 @@ public class App extends Application {
     static final String PATH_USERINIT = "/data/local/userinit.d";
     //Path to bin dir
     static final String PATH_BIN = "/data/local/bin";
-    //Files names of script and e2fsck
+    //Files names of script and logger
     static final String SCRIPT = "simple2ext";
-    static final String E2FSCK = "e2fsck";
     static final String LOGGER = "logger";
     //Shell command templates for make dir
     static final String SHELL_MAKE_DIR = "busybox install -m 777 -o 1000 -g 1000 -d ";
