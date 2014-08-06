@@ -19,17 +19,17 @@ package ru.krikun.s2e;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.widget.Toast;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.preference.PreferenceActivity;
+import android.view.MenuItem;
 
-public class Settings extends SherlockPreferenceActivity {
+public class Settings extends PreferenceActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.setting);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         setOnPreferenceChange();
     }

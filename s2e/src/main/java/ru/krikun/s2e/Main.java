@@ -24,14 +24,14 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
 import android.util.Log;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import android.preference.PreferenceActivity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import java.util.List;
 
-public class Main extends SherlockPreferenceActivity {
+public class Main extends PreferenceActivity {
 
     private App app;
     private int sizeToExt;
@@ -49,8 +49,8 @@ public class Main extends SherlockPreferenceActivity {
         app = App.getInstance();
 
         setContentView(R.layout.main_screen);
-        getSupportActionBar().setTitle(R.string.app_label);
-        getSupportActionBar().setSubtitle("DATA: --  EXT: --");
+        getActionBar().setTitle(R.string.app_label);
+        getActionBar().setSubtitle("DATA: --  EXT: --");
     }
 
     @Override
@@ -275,7 +275,7 @@ public class Main extends SherlockPreferenceActivity {
                 .append("  ")
                 .append("EXT: ")
                 .append(convertSize(app.getPartitions().get("sd-ext").getFree()));
-        getSupportActionBar().setSubtitle(label);
+        getActionBar().setSubtitle(label);
     }
 
     private void showInformation() {

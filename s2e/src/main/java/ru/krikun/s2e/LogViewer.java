@@ -19,10 +19,10 @@ package ru.krikun.s2e;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
-import com.actionbarsherlock.app.SherlockActivity;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
+import android.app.Activity;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -30,7 +30,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
-public class LogViewer extends SherlockActivity {
+public class LogViewer extends Activity {
 
     private StringBuilder log;
 
@@ -42,8 +42,8 @@ public class LogViewer extends SherlockActivity {
 
         File logFile = new File("/data/local","s2e.log");
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setSubtitle(new SimpleDateFormat("yyyy.MM.dd HH:mm").format(logFile.lastModified()));
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setSubtitle(new SimpleDateFormat("yyyy.MM.dd HH:mm").format(logFile.lastModified()));
 
         log = readLog(logFile);
 

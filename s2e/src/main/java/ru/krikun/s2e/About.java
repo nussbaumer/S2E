@@ -17,11 +17,11 @@
 package ru.krikun.s2e;
 
 import android.os.Bundle;
-import com.actionbarsherlock.app.SherlockPreferenceActivity;
-import com.actionbarsherlock.view.MenuItem;
+import android.preference.PreferenceActivity;
+import android.view.MenuItem;
 
 
-public class About extends SherlockPreferenceActivity {
+public class About extends PreferenceActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,9 +36,9 @@ public class About extends SherlockPreferenceActivity {
                 .append(" - ")
                 .append(App.getRes().getString(R.string.app_version));
 
-        getSupportActionBar().setTitle(stringBuilder);
-        getSupportActionBar().setSubtitle(R.string.app_by);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setTitle(stringBuilder);
+        getActionBar().setSubtitle(R.string.app_by);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public boolean onOptionsItemSelected(MenuItem item) {
