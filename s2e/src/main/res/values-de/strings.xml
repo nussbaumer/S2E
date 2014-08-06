@@ -49,8 +49,6 @@
     <string name="settings">Einstellungen</string>
     <string name="general_options">Allgemeine Optionen</string>
     <string name="boot_options">Boot Optionen</string>
-    <string name="setting_mount">Als ext4 mounten</string>
-    <string name="setting_mount_summary">sd-ext als ext4 ohne Journaling mounten</string>
     <string name="set_read_ahead">Lesepuffer aktivieren</string>
     <string name="set_read_ahead_summary">Lesepuffer für die SD-Karte aktivieren</string>
     <string name="read_ahead_values">Puffergröße</string>

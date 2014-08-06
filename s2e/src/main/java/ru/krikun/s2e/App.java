@@ -167,16 +167,6 @@ public class App extends Application {
         } else return true;
     }
 
-    //Create mount file
-    public static void createMountFile() {
-        createFile(S2E_CONFIG_DIR + "/.mounts_ext4");
-    }
-
-    //Delete mount file
-    public static void deleteMountFile() {
-        delFile(S2E_CONFIG_DIR + "/.mounts_ext4");
-    }
-
     //Create ReadAhead file
     public static void createReadAheadFile() {
         createFile(S2E_CONFIG_DIR + "/.read_ahead");

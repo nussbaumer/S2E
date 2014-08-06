@@ -53,8 +53,6 @@
     <string name="settings">Pengaturan</string>
     <string name="general_options">Pilihan umum</string>
     <string name="boot_options">Pilihan boot</string>
-    <string name="setting_mount">Mount sebagai ext4</string>
-    <string name="setting_mount_summary">Mount sd-ext sebagai ext4 tanpa journaling</string>
     <string name="set_read_ahead">Menetapkan membaca buffer</string>
     <string name="set_read_ahead_summary">Menetapkan membaca buffer untuk SD card</string>
     <string name="read_ahead_values">Buffer ukuran</string>

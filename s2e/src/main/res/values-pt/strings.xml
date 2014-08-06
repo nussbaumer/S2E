@@ -20,7 +20,6 @@
     <string name="app_label">simple2ext</string>
     <string name="app_version">3.0.2</string>
     <string name="app_by">©2012 OlegKrikun</string>
-    <string name="script_md5">0570f09df59ebb03b4fed0c77b99ad9a</string>
   <!--About-->
     <string name="about">Sobre</string>
     <string name="credits">Créditos</string>
@@ -64,8 +63,6 @@
     <string name="settings">Definições</string>
     <string name="general_options">Opções gerais</string>
     <string name="boot_options">Opções de arranque</string>
-    <string name="setting_mount">Montar como ext4</string>
-    <string name="setting_mount_summary">Montar sd-ext como ext4 sem journaling</string>
     <string name="set_read_ahead">Definir buffer de leitura</string>
     <string name="set_read_ahead_summary">Definir buffer de leitura do cartão SD</string>
     <string name="read_ahead_values">Tamanho do buffer</string>

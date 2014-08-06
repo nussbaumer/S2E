@@ -19,11 +19,6 @@
 
     <PreferenceCategory android:title="@string/boot_options">
         <CheckBoxPreference
-                android:title="@string/setting_mount"
-                android:defaultValue="false"
-                android:summary="@string/setting_mount_summary"
-                android:key="mounts_ext4"/>
-        <CheckBoxPreference
                 android:title="@string/set_read_ahead"
                 android:defaultValue="false"
                 android:summary="@string/set_read_ahead_summary"

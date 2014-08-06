@@ -56,8 +56,6 @@
     <string name="settings">Paramètres</string>
     <string name="general_options">Options générales</string>
     <string name="boot_options">Options de démarrage</string>
-    <string name="setting_mount">Monter en ext4</string>
-    <string name="setting_mount_summary">Monte sd-ext en ext4 sans journalisation</string>
     <string name="set_read_ahead">Modifier tampon carte SD</string>
     <string name="set_read_ahead_summary">Défini la taille du tampon de prélecture pour la carte SD</string>
     <string name="read_ahead_values">Taille du tampon</string>

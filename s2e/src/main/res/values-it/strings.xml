@@ -59,8 +59,6 @@
     <string name="settings">Impostazioni</string>
     <string name="general_options">Opzioni generali</string>
     <string name="boot_options">Opzioni d\'avvio</string>
-    <string name="setting_mount">Monta come ext4</string>
-    <string name="setting_mount_summary">Monta sd-ext come ext4 senza journaling</string>
     <string name="set_read_ahead">Imposta read buffer</string>
     <string name="set_read_ahead_summary">Imposta il read buffer per la scheda SD</string>
     <string name="read_ahead_values">Grandezza buffer</string>

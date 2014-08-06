@@ -58,8 +58,6 @@
     <!--Settings-->
     <string name="settings">Настройки</string>
     <string name="general_options">Основные настройки</string>
-    <string name="setting_mount">Монтировать как ext4</string>
-    <string name="setting_mount_summary">Монтировать sd-ext как ext4 без журналирования</string>
     <string name="set_read_ahead">Установить буфер чтения</string>
     <string name="set_read_ahead_summary">Установить буфер чтения SD карты</string>
     <string name="read_ahead_values">Размер буфера</string>

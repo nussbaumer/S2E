@@ -53,8 +53,6 @@
     <string name="settings">Postavke</string>
     <string name="general_options">Opće postavke</string>
     <string name="boot_options">Boot postavke</string>
-    <string name="setting_mount">Montiraj kao ext4</string>
-    <string name="setting_mount_summary">Montiraj sd-ext kao ext4 bez journaling-a</string>
     <string name="set_read_ahead">Postavi buffer čitač</string>
     <string name="set_read_ahead_summary">Postavite buffer čitač za SD karticu</string>
     <string name="read_ahead_values">Veličina buffera</string>

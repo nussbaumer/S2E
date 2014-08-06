@@ -59,8 +59,6 @@
     <string name="settings">Ayarlar</string>
     <string name="general_options">Genel tercihler</string>
     <string name="boot_options">Boot tercihleri</string>
-    <string name="setting_mount">Ext4 olarak mount et</string>
-    <string name="setting_mount_summary">Günlük oluşturmadan sd-ext\'i ext4 olarak mount et</string>
     <string name="set_read_ahead">Okuma geçici belleğini ayarla</string>
     <string name="set_read_ahead_summary">Okuma geçici belleğini SD kart için ayarla</string>
     <string name="read_ahead_values">Geçici bellek boyutu</string>

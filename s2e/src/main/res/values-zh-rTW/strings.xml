@@ -55,8 +55,6 @@
     <string name="settings">設定</string>
     <string name="general_options">一般設定</string>
     <string name="boot_options">啟動功能</string>
-    <string name="setting_mount">掛載為ext4</string>
-    <string name="setting_mount_summary">掛載為ext4(不帶日誌功能)</string>
     <string name="set_read_ahead">預讀緩存</string>
     <string name="set_read_ahead_summary">設定sd卡預讀緩存</string>
     <string name="read_ahead_values">設定預讀緩存大小</string>

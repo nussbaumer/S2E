@@ -44,24 +44,7 @@ public class Settings extends SherlockPreferenceActivity {
         }
     }
 
-    private void setMountState(boolean mounts_mode) {
-        if (App.checkConfigDir()) {
-            if (mounts_mode) App.createMountFile();
-            else App.deleteMountFile();
-        }
-    }
-
     private void setOnPreferenceChange() {
-
-        Preference mounts = findPreference("mounts_ext4");
-        mounts.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-            public boolean onPreferenceChange(Preference preference, Object object) {
-                boolean value = object.equals(true);
-                setMountState(value);
-                return true;
-            }
-        });
 
         Preference ReadAhead = findPreference("set_read_ahead");
         ReadAhead.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {

@@ -53,8 +53,6 @@
     <string name="settings">Nastavenia</string>
     <string name="general_options">Základné nastavenia</string>
     <string name="boot_options">Nastavenia pri bootovaní</string>
-    <string name="setting_mount">Pripojiť ako ext4</string>
-    <string name="setting_mount_summary">Pripojiť sd-ext ako ext4 bez denníka</string>
     <string name="set_read_ahead">Zapnúť vyrovnávaciu pamäť pre čitanie</string>
     <string name="set_read_ahead_summary">Zapne vyrovnávaciu pamäť pre čitanie z SD karty</string>
     <string name="read_ahead_values">Veľkosť vyrovnávacej pamäte</string>
