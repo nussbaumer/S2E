@@ -4,7 +4,7 @@
 BB="busybox"
 DELETE="busybox rm -rf"
 S2E_CONFIG_DIR=/data/local/s2e_config/
-LOGGER=/data/local/bin/logger
+LOGGER=/data/local/bin/s2elogger
 LOGFILE=/data/local/s2e.log
 
 if [ -e ${LOGFILE} ];

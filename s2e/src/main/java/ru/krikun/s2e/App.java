@@ -32,7 +32,7 @@ public class App extends Application {
     static final String PATH_BIN = "/data/local/bin";
     //Files names of script and logger
     static final String SCRIPT = "simple2ext";
-    static final String LOGGER = "logger";
+    static final String LOGGER = "s2elogger";
     //Shell command templates for make dir
     static final String SHELL_MAKE_DIR = "busybox install -m 777 -o 1000 -g 1000 -d ";
     //Shell command templates for set permission to script
