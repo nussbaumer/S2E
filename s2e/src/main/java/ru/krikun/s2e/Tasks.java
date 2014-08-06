@@ -139,8 +139,6 @@ class Tasks {
             if (!toolsExists()) {
                 //Check /data/local/bin exists and create this if needed
                 makeDirShell(App.PATH_BIN);
-                //Install tune2fs to home, copy to bin and set permission
-                installTool(App.TUNE2FS);
                 //Install e2fsck to home, copy to bin and set permission
                 installTool(App.E2FSCK);
                 //Install logger to home, copy to bin and set permission
@@ -242,8 +240,7 @@ class Tasks {
 
     //Check tools exists
     private boolean toolsExists() {
-        return App.checkFileExists(App.PATH_BIN + App.SEPARATOR + App.TUNE2FS) &&
-                App.checkFileExists(App.PATH_BIN + App.SEPARATOR + App.E2FSCK) &&
+        return App.checkFileExists(App.PATH_BIN + App.SEPARATOR + App.E2FSCK) &&
                 App.checkFileExists(App.PATH_BIN + App.SEPARATOR + App.LOGGER);
     }
 

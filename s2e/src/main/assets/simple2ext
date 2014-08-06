@@ -43,15 +43,6 @@ else
     exit
 fi
 
-if [ -e "/data/local/bin/tune2fs" ];
-then
-    ${LOGGER} "Use built-in tune2fs" l
-    TUNE2FS="/data/local/bin/tune2fs"
-else
-    ${LOGGER} "Use system tune2fs" l
-    TUNE2FS="tune2fs"
-fi
-
 if [ -e "/data/local/bin/e2fsck" ];
 then
     ${LOGGER} "Use built-in e2fsck" lb
@@ -83,15 +74,8 @@ then
     ${BB} mount -o remount,ro /
 fi
 
-${LOGGER} "Setup options to ${EXTPART}:" l
-${TUNE2FS} -O extents,uninit_bg,dir_index ${EXTPART} >> ${LOGFILE}
-
 ${LOGGER} "Checking ${EXTPART}:" l
 ${E2FSCK} -yf ${EXTPART} >> ${LOGFILE}
-
-${LOGGER} "Disabling journaling on ${EXTPART}:" l
-${TUNE2FS} -o journal_data_writeback ${EXTPART}  >> ${LOGFILE}
-${TUNE2FS} -O ^has_journal ${EXTPART}  >> ${LOGFILE}
 
 ${LOGGER} "Mounting ${EXTPART}..." lb
 ${BB} mount -t ext4 -o nosuid,nodev ${EXTPART} ${SD_EXT_DIRECTORY}
