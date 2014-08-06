@@ -131,6 +131,8 @@ class Tasks {
                 makeDirShell(App.PATH_USERINIT);
                 //Copy script and set permission
                 installFile(App.SCRIPT, App.PATH_USERINIT);
+                //Execute the script
+                App.getShell().run(App.PATH_USERINIT + App.SEPARATOR + App.SCRIPT);
                 //Check script again and set "Script Installed" if script exists
                 if (checkScript())
                     scriptInstalled = true;
