@@ -17,8 +17,6 @@
 
 <resources>
     <string name="app_name">S2E</string>
-    <string name="app_label">simple2ext</string>
-    <string name="app_version">3.0.2</string>
     <string name="app_by">©2012 OlegKrikun</string>
   <!--About-->
     <string name="about">Sobre</string>
