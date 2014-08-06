@@ -17,7 +17,7 @@
 package ru.krikun.s2e;
 
 import com.stericson.RootTools.exceptions.RootDeniedException;
-import com.stericson.RootTools.execution.Command;
+import com.stericson.RootTools.execution.CommandCapture;
 import com.stericson.RootTools.RootTools;
 
 import java.io.IOException;
@@ -29,9 +29,6 @@ class Shell {
 
     private static com.stericson.RootTools.execution.Shell shell = null;
     private static boolean root;
-
-    //Timeout for shell request
-    private static final int SHELL_TIMEOUT = 60000;
 
     public boolean isRoot() {
         return root;
@@ -56,17 +53,32 @@ class Shell {
         Cmd command = new Cmd(s);
         if (shell != null) {
             try {
-                shell.add(command).waitForFinish(SHELL_TIMEOUT);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
+                shell.add(command);
+                commandWait(command);
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }
         return command.getResult();
     }
 
-    private class Cmd extends Command {
+    private void commandWait(CommandCapture cmd) throws Exception {
+
+        while (!cmd.isFinished()) {
+
+            synchronized (cmd) {
+                try {
+                    if (!cmd.isFinished()) {
+                        cmd.wait(2000);
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private class Cmd extends CommandCapture {
 
         private final List<String> result = new ArrayList<String>();
 
