@@ -28,6 +28,7 @@
     <string name="paid_apps">Paid apps</string>
     <string name="private_apps">Private apps</string>
     <string name="app_data">Application Data</string>
+    <string name="app_lib">Application Libraries</string>
     <string name="caches">Caches</string>
     <string name="dalvik_cache">Dalvik cache</string>
     <string name="download_cache">Download cache</string>

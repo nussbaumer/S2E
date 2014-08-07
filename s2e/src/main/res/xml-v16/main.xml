@@ -35,6 +35,10 @@
                 android:title="@string/app_data"
                 android:defaultValue="false"
                 android:key="data"/>
+        <CheckBoxPreference
+                android:title="@string/app_lib"
+                android:defaultValue="false"
+                android:key="app-lib"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/caches">
         <CheckBoxPreference

@@ -21,6 +21,7 @@
     <string-array name="targets" translatable="false">
         <item>app</item>
         <item>app-asec</item>
+        <item>app-lib</item>
         <item>app-private</item>
         <item>data</item>
         <item>dalvik-cache</item>
