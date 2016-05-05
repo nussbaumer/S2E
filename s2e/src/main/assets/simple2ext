@@ -1,6 +1,6 @@
 #!/system/bin/sh
 
-# Initialization, checks and mounts
+# Initialization, checks and mounts TEST
 BB="busybox"
 DELETE="busybox rm -rf"
 S2E_CONFIG_DIR=/data/local/s2e_config/
